@@ -1,0 +1,75 @@
+.az-tabs {
+	.az-tab-nav {
+		clear: both;
+		margin: 0 0 0em 0;
+		padding: 3px;
+		float: left;
+		width: 100%;
+		background: lighten($color-black, 95%);
+		@include border-radius(4px);
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			width: 25%;
+			text-align: center;
+			list-style: none;
+			@include inline-block;
+			.icon {
+				font-size: 30px;
+			}
+			a {
+				padding: 20px;
+				width: 100%;
+				float: left;
+				@include border-radius(4px);
+				color: lighten($color-black, 70%);
+				cursor: pointer;
+				&:hover {
+					color: lighten($color-black, 30%);
+				}
+			}
+			&.active {
+				a {
+					background: $color-white;
+					color: $color-gray;
+					font-weight: 600;
+					
+				}
+			}
+		}
+	}
+	.az-tab-content-wrap {
+		clear: both;
+		position: relative;
+		@media screen and (max-width: $screen-sm) {
+			top: 10px;
+		}
+		.tab-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			opacity: 0;
+			visibility: hidden;
+			&.active {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	.icon-xlg {
+		font-size: 400px;
+		margin-bottom: 30px;
+		text-align: center;
+		@media screen and (max-width: $screen-sm) {
+			font-size: 300px;
+		}
+		@media screen and (max-width: $screen-xs) {
+			font-size: 200px;
+		}
+		i {
+			color: $color-primary;
+		}
+	}
+}

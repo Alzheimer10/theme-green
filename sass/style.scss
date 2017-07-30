@@ -1,0 +1,257 @@
+// Import 
+@import "mix";
+@import "variables";
+@import "exagonal";
+@import "hover-container";
+@import "popuo-box";
+@import "responsiveslides";
+@import "variables-bootstrap";
+@import "tabs";
+@import "link_effects";
+
+@media (min-width: 768px){	
+	.navbar {
+	    position: fixed;
+	    z-index: 10000;
+	    width: 90%;
+	    left: 5%;
+	    border-radius: 0;
+	    margin-top: 11px;
+	}
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+ul{
+	list-style: none;
+	-webkit-padding-start: 0px;
+}
+.relative{
+	position: relative;
+}
+.nav-tabs-home{
+	& .tab-content {
+		min-height: 300px;
+	}
+	& ul li{
+		width: calc(100%/4);
+		text-align: center;
+		&.active{
+			border-bottom: 4px solid #D3FF0D;
+		}
+	}
+
+}
+.az-dropdown{
+	@media screen and  (min-width: $screen-sm){	
+		right: -15px !important;
+		border: none;
+	}
+}
+
+.highlight {
+    background-color: $color-primary;
+    color: $color-gray !important;
+    padding: 0 8px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#slider-index{
+	background-color: $color-primary;
+	height: 700px;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
+    right: 3%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/to-top1.png) no-repeat 0px 0px;
+    background-color: rgb(187, 186, 186);
+}
+
+.az-section{
+	width: 100%;
+	padding: 40px;
+	@media screen and (max-width: $screen-sm) {
+		padding: 0px;
+	}
+}
+.az-section-head{
+    text-align: center;
+    padding: 4em 0;
+    h3{
+	    color: #282528;
+	    font-weight: 800;
+	    font-size: 1.6em;
+	    overflow: hidden;
+	    & span{
+			position: relative;
+		    &:before{
+			    content: "";
+			    position: absolute;
+			    top: 12px;
+			    width: 100px;
+			    height: 1px;
+			    left: -100px;
+			    background-color: black;
+			    @include transform(rotate(4deg));
+		   	}
+		    &:after{
+			    content: "";
+			    position: absolute;
+			    top: 12px;
+			    width: 100px;
+			    height: 1px;
+			    right: -100px;
+			    background-color: black;
+			    @include transform(rotate(-4deg));
+		   	}
+	    }
+    }
+	p{
+    width: 95%;
+    margin: 3em auto 1.2em auto;
+    color: #282528;
+    line-height: 1.8em;
+    font-size: 1.6em;
+	}
+}
+
+.az-title-head{
+	position: relative;
+	&:before{
+	    content: "";
+	    position: absolute;
+	    top: 12px;
+	    width: 100px;
+	    height: 1px;
+	    left: -100px;
+	    background-color: black;
+	    @include transform(rotate(4deg));
+	}
+	&:after{
+	    content: "";
+	    position: absolute;
+	    top: 12px;
+	    width: 100px;
+	    height: 1px;
+	    right: -100px;
+	    background-color: black;
+	    @include transform(rotate(-4deg));
+	}
+}
+
+.divice-slider{
+	overflow: hidden;
+  animation: myAnimation 1000ms infinite;
+}
+.divice-slider{
+  animation: animar 5000ms infinite;
+}
+@keyframes myAnimation{
+  0%{top: 0px; -webkit-animation-timing-function: ease-out; -moz-animation-timing-function: ease-out; -ms-animation-timing-function: ease-out; -o-animation-timing-function: ease-out; animation-timing-function: ease-out;}
+  25%{top: -4px; -webkit-animation-timing-function: ease-in; -moz-animation-timing-function: ease-in; -ms-animation-timing-function: ease-in; -o-animation-timing-function: ease-in; animation-timing-function: ease-in;}
+  50%{top: 0px; -webkit-animation-timing-function: ease-out; -moz-animation-timing-function: ease-out; -ms-animation-timing-function: ease-out; -o-animation-timing-function: ease-out; animation-timing-function: ease-out;}
+  75%{top: -0px; -webkit-animation-timing-function: ease-in; -moz-animation-timing-function: ease-in; -ms-animation-timing-function: ease-in; -o-animation-timing-function: ease-in; animation-timing-function: ease-in;}
+  100%{top: 0px; -webkit-animation-timing-function: ease-out; -moz-animation-timing-function: ease-out; -ms-animation-timing-function: ease-out; -o-animation-timing-function: ease-out; animation-timing-function: ease-out;}
+}
+@keyframes animar{
+  0% {
+    left: 0;
+    top: 0;
+  }
+  10% {
+    left: 5rem;
+    top: 0rem;
+    color: #9b59b6;
+  }
+  30% {
+    top: 5rem;
+    left: 5rem;
+    color: white;
+  }
+  60%{
+    top: 5rem;
+    left: 0;
+    color: #9b59b6;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.parallax-window{
+	min-height: 200px;
+	height: 200px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: table;
+    &:before{
+		background-color: $color-primary;
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	    top: 0;
+	    left: 0;
+	    z-index: 0;
+	    opacity: 0.7;
+    }
+    & .parallax-content{
+    	color: $color-black;
+    	padding: 2em 0;
+	    display: table-cell;
+	    vertical-align: middle;
+	    z-index: 1;
+	    p{
+			color: $color-black;
+		    position: relative;
+	    }
+		.az-title-head{
+			position: relative;
+			&:before{
+			    background-color: $color-black;
+			}
+			&:after{
+			    background-color: $color-black;
+			}
+		}
+    }
+}
+
+.info-member{
+	text-align: center;
+	& h3,& p{
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+}
+.social-personal {
+    text-align: center;
+    min-height: 22px;
+    margin: 20px 0px;
+	& a {
+	    color: $color-gray;
+	    padding: 0px 20px;
+	    position: relative;
+		&:hover i{
+		    transform: rotate(-7deg) scale(2.5);
+		    transition-duration: 0.2s;
+		}
+	}
+
+}

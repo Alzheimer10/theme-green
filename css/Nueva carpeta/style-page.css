@@ -1,0 +1,9 @@
+.az-nav ul li.has-dropdown .dropdown {
+  padding: 35px 0px; }
+  .az-nav ul li.has-dropdown .dropdown li a {
+    color: #2a314e; }
+    .az-nav ul li.has-dropdown .dropdown li a:hover {
+      color: #2a314e; }
+
+#az-footer {
+  background: #e6e6e5; }
