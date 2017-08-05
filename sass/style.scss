@@ -64,6 +64,12 @@ ul{
 	}
 }
 
+.initial{
+	display: initial;
+}
+.clear-both{
+    clear: both;
+}
 .highlight {
     background-color: $color-primary;
     color: $color-gray !important;
@@ -359,4 +365,11 @@ ul{
   overflow:hidden;
   clip:rect(0,900px,0,0); 
   animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+#map{
+	height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 0px 0px $color-primary;
 }

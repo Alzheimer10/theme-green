@@ -287,32 +287,31 @@
 					<div class="row text-center">
 						<button type="submit" class="btn btn-default">Submit</button>
 					</div>
+					<hr class="featurette-divider-low">
 				</div>
 				<div class="col-md-6">						
-					<div class="az-contact-info">
-						<h3>Venezuela</h3>
+					<div class="az-contact-info text-center">
+						<h3 class="initial">Venezuela</h3> Puerto Cabello, Carabobo. Edificio la Sultana
 						<ul>
-							<li class="address">Puerto Cabello, Carabobo <br> Edificio la Sultana</li>
-							<li class="phone"><a href="tel://0000000">+ 0000000</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li class="url"><a href="#">MiSitio.com</a></li>
+							<li class="phone"><a href="tel://0000000"><i class="fa fa-phone" aria-hidden="true"></i> + 0000000</a></li>
+							<li class="email"><a href="mailto:info@yoursite.com"><i class="fa fa-envelope" aria-hidden="true"></i> info@yoursite.com</a></li>
+							<li class="url"><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> MiSitio.com</a></li>
 						</ul>
+						<style>
+							.az-contact-info ul li{
+								float: left;
+								width: calc(100%/3);
+							}
+						</style>
 					</div>
 
-					<div class="az-contact-info">
-
-	<style>
-		#map {
-	    	height: 400px;
-	    }
-	</style>
-    <div id="map"></div>
-
+					<div class="az-contact-info clear-both">
+					    <div id="map"></div>
 					</div>
 				</div>
 			</div>
 		</form>
-		<hr class="featurette-divider">
+		<hr class="featurette-divider-low">
 	</div>
 	<!-- END-HEADER -->
 	<footer>
@@ -385,8 +384,6 @@
 			awesome_input_focus_effects();
 			$('.parallax-window').parallax({imageSrc: 'images/city.jpg'});
 		});
-
-	    
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9W3uAmbhhbj7MYJZXHvLxkSSOiYS0iSM&callback=initMap" async defer></script>
 </html>
