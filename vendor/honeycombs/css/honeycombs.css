@@ -1,0 +1,82 @@
+.js-grid-refresh:focus {
+  outline: none; }
+
+.hex-container {
+  overflow: hidden; }
+
+.hex-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 5000px; }
+
+@media (max-width: 768px) {
+  .hex-grid {
+    width: 100%; } }
+.hex-grid__item {
+  float: left;
+  width: 200px;
+  width: calc(100vw / 6);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hex-grid__item a:hover:before {
+    content: ""; }
+  .hex-grid__item a:before {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #D3FF0D;
+    opacity: .5; }
+  .hex-grid__item a:hover:after {
+    content: attr(data-text); }
+  .hex-grid__item a:after {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #282528;
+    font-size: 2rem; }
+
+@media (min-width: 1200px) {
+  .hex-grid__item {
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff; } }
+@media (max-width: 768px) {
+  .hex-grid__item {
+    width: calc(100vw / 2);
+    margin-bottom: calc(100vw / -7.5); }
+
+  .hex-grid__item:nth-child(3n+1) {
+    margin-left: calc(100vw / 4);
+    clear: left;
+    opacity: 0.4; }
+
+  .hex-grid__item:nth-child(3n+1):last-child {
+    margin-bottom: 0; } }
+@media (min-width: 768px) {
+  .hex-grid__item:nth-child(7), .hex-grid__item:nth-child(14) {
+    clear: left; }
+
+  .hex-grid__item:nth-child(1), .hex-grid__item:nth-child(6), .hex-grid__item:nth-child(7), .hex-grid__item:nth-child(13), .hex-grid__item:nth-child(14), .hex-grid__item:nth-child(19) {
+    opacity: 0.4;
+    z-index: -1; }
+
+  .hex-grid__item:nth-child(n+7):nth-child(-n+13) {
+    position: relative;
+    left: -105px;
+    left: calc(100vw/-12);
+    top: -58px;
+    top: calc(100vw/-24);
+    margin-bottom: -111px;
+    margin-bottom: calc(100vw/-12); } }
+.hex-grid__media {
+  display: block;
+  width: 100%; }

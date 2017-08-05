@@ -8,6 +8,7 @@
 @import "variables-bootstrap";
 @import "tabs";
 @import "link_effects";
+@import "footer";
 
 @media (min-width: 768px){	
 	.navbar {
@@ -19,6 +20,17 @@
 	    margin-top: 11px;
 	}
 }
+
+@media screen and (min-width: $screen-md){	
+	html{
+	    min-height: 100%;
+	    position: relative;
+	}
+	body{
+	  margin: 0;
+	  margin-bottom: 205px;
+	}
+}	
 a{
 	text-decoration: none;
 	&:hover{
@@ -200,6 +212,7 @@ ul{
     padding: 0px;
     margin: 0px;
     display: table;
+    overflow: hidden;
     &:before{
 		background-color: $color-primary;
 		content: "";
@@ -241,17 +254,109 @@ ul{
 	}
 }
 .social-personal {
-    text-align: center;
-    min-height: 22px;
-    margin: 20px 0px;
+	-webkit-padding-start: 0px;
+	margin: 10px 0px 40px 0px;
+	& li{
+		float: left;
+	    display: inline-block;
+	    width: calc(100% / 4);
+	}
 	& a {
 	    color: $color-gray;
-	    padding: 0px 20px;
+	    margin: calc(100%/4);
 	    position: relative;
 		&:hover i{
 		    transform: rotate(-7deg) scale(2.5);
 		    transition-duration: 0.2s;
 		}
 	}
+}
+.img{ width: 100% }
+.animatedParent{ overflow: hidden; }
+.az-loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10001;
+	background: url(../images/loader.gif) center no-repeat $color-primary;
+}
+.scroll-loader{
+	overflow-x:hidden;
+	overflow-y:hidden; 
+}
+.top-nav{
+	position: fixed;
+    width: 100%;
+    left: 0;
+    margin-top: 0px;
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(211,255,13,1);
+	-moz-box-shadow: 0px 1px 0px 0px rgba(211,255,13,1);
+	box-shadow: 0px 1px 0px 0px rgba(211,255,13,1);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.featurette-divider {
+	width: 100%;
+  margin: 80px 0;
+  border-color: transparent;
+}
 
+.featurette-divider-low {
+	width: 100%;
+  margin: 20px 0;
+  border-color: transparent;
+}
+
+
+.glitch{
+  color:white;
+  font-size:100px;
+  position:relative;
+  width:400px;
+  margin:0 auto;
+}
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:after{
+  content:attr(data-text);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:white;
+  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:before{
+  content:attr(data-text);
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 blue; 
+  top:0;
+  color:white;
+  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
 }

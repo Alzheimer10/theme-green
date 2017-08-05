@@ -10,22 +10,30 @@
 	<meta name="author" content="Carlos Anselmi" />
 	<link rel="shortcut icon" href="images/fav.png" />	
 
-
-
 	<!-- fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
 	<!-- bootstrap -->
-	<link href="css/_bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<!-- owl.carousel -->
 	<link href="vendor/OwlCarousel/css/OwlCarousel.css" rel="stylesheet">
 	 <!--  responsiveslides -->
 	<link href="vendor/responsiveslides/responsiveslides.css" rel="stylesheet" type="text/css" media="all"/>
 	 <!--  font-awesome -->
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<!--  css3-animate-it -->
+	<link href="vendor/css3-animate-it/css/css3-animate-it.css" rel="stylesheet" type="text/css" media="all"/>
+	<! - [if lte IE 9]>
+	      <Link href="vendor/css3-animate-it/css/css3-animate-it.css" rel="stylesheet">
+	<! [Endif] ->
+	<!-- honeycombs -->
+	<link rel="stylesheet" type="text/css" href="vendor/honeycombs/css/honeycombs.css" />
+	<!-- awesome-input-focus-effects -->
+	<link rel="stylesheet" type="text/css" href="vendor/awesome-input-focus-effects/css/awesome-input-focus-effects.css" />
 	<!-- style -->
 	<link href="css/style.css" rel='stylesheet' type='text/css'/>
 </head>
-<body>
+<body class="scroll-loader">
+	<div class="az-loader"></div>
 	<!-- start-container -->
 	<!-- HEADER -->
 	<div class="header-section">
@@ -115,10 +123,10 @@
 			<div class="col-md-6">
 				<div class="nav-tabs-home">
 					<ul class="nav nav-tabs">
-					  <li class="active cl-effect-3"><a data-toggle="tab" href="#home"><span class="icon visible-xs"><i class="fa fa-code" aria-hidden="true"></i></span><span class="hidden-xs">SECTION_1</span></a></li>
-					  <li class="cl-effect-3"><a data-toggle="tab" href="#menu1"><span class="icon visible-xs"><i class="fa fa-picture-o" aria-hidden="true"></i></span><span class="hidden-xs">SECTION_2</span></a></li>
-					  <li class="cl-effect-3"><a data-toggle="tab" href="#menu2"><span class="icon visible-xs"><i class="fa fa-object-ungroup" aria-hidden="true"></i></span><span class="hidden-xs">SECTION_3</span></a></li>
-					  <li class="cl-effect-3"><a data-toggle="tab" href="#menu3"><span class="icon visible-xs"><i class="fa fa-video-camera" aria-hidden="true"></i></span><span class="hidden-xs">SECTION_4</span></a></li>
+					  <li class="active cl-effect-3"><a data-toggle="tab" href="#home"><span class="icon visible-xs"><i class="fa fa-code  fa-2x" aria-hidden="true"></i></span><span class="hidden-xs">SECTION_1</span></a></li>
+					  <li class="cl-effect-3"><a data-toggle="tab" href="#menu1"><span class="icon visible-xs"><i class="fa fa-picture-o  fa-2x" aria-hidden="true"></i></span><span class="hidden-xs">SECTION_2</span></a></li>
+					  <li class="cl-effect-3"><a data-toggle="tab" href="#menu2"><span class="icon visible-xs"><i class="fa fa-object-ungroup  fa-2x" aria-hidden="true"></i></span><span class="hidden-xs">SECTION_3</span></a></li>
+					  <li class="cl-effect-3"><a data-toggle="tab" href="#menu3"><span class="icon visible-xs"><i class="fa fa-video-camera  fa-2x" aria-hidden="true"></i></span><span class="hidden-xs">SECTION_4</span></a></li>
 					</ul>
 					</ul>
 					<div class="tab-content">
@@ -154,6 +162,36 @@
 		</div>
 	</div>
 
+	<div class="relative">
+		<div class="az-section-head text-center">
+			<h3><span class="az-title-head">PROJECTS</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="highlight">repellendus?</span>  asperiores porro dolor quos, eos animi non rem laborum, magni natus alias temporibus quas <span class="highlight"> explicabo fuga ipsam</span> .</p>
+		</div>
+		<div class="hex-container">
+			<ul class="hex-grid">
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=758" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=458" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=358" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=258" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=158" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=558" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=658" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=318" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=628" alt="project"> </a></li>
+			    <li class="hex-grid__item no-refresh"><a href="#" class="js-grid-refresh"> <img class="hex-grid__media" src="http://placehold.it/200x230&text=Reload"/></a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=528" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=428" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=328" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=228" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=128" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=548" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=648" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=448" alt="project"> </a></li>
+			    <li class="hex-grid__item"><a href="#" data-text="TITLE"> <img class="hex-grid__media" src="https://unsplash.it/200/230?image=448" alt="project"> </a></li>
+			</ul>
+		</div>
+	</div>
+
 	<div class="container">
 		<div class="az-section-head text-center">
 			<h3><span class="az-title-head">TEAM</span></h3>
@@ -161,65 +199,121 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-6 col-md-3">
-				<img class="img-circle" src="images/team-member1.jpg" alt="member1">
+				<img class="img img-circle" src="images/team-member1.jpg" alt="member1">
 				<div class="info-member">
 					<h3>Carlos Anselmi</h1>
 					<p>- Developer -</p>
 				</div>
-				<div class="social-personal">
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-facebook"></i></a>
-				    <a href=""><i class="fa fa-google-plus"></i></a>
-				    <a href=""><i class="fa fa-linkedin"></i></a>
-				</div>
+				<ul class="social-personal">
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+				</ul>
 			</div>
 			<div class="col-xs-6 col-md-3">
-				<img class="img-circle" src="images/team-member2.jpg" alt="member2">
+				<img class="img img-circle" src="images/team-member2.jpg" alt="member2">
 				<div class="info-member">
 					<h3>Carlos Anselmi</h1>
 					<p>- Developer -</p>
 				</div>
-				<div class="social-personal">
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-facebook"></i></a>
-				    <a href=""><i class="fa fa-google-plus"></i></a>
-				    <a href=""><i class="fa fa-linkedin"></i></a>
-				</div>
+				<ul class="social-personal">
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+				</ul>
 			</div>
 			<div class="col-xs-6 col-md-3">
-				<img class="img-circle" src="images/team-member3.jpg" alt="member3">
+				<img class="img img-circle" src="images/team-member3.jpg" alt="member3">
 				<div class="info-member">
 					<h3>Carlos Anselmi</h1>
 					<p>- Developer -</p>
 				</div>
-				<div class="social-personal">
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-facebook"></i></a>
-				    <a href=""><i class="fa fa-google-plus"></i></a>
-				    <a href=""><i class="fa fa-linkedin"></i></a>
-				</div>
+				<ul class="social-personal">
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+				</ul>
 			</div>
 			<div class="col-xs-6 col-md-3">
-				<img class="img-circle" src="images/team-member4.jpg" alt="member4">
+				<img class="img img-circle" src="images/team-member4.jpg" alt="member4">
 				<div class="info-member">
 					<h3>Carlos Anselmi</h1>
 					<p>- Developer -</p>
 				</div>
-				<div class="social-personal">
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-facebook"></i></a>
-				    <a href=""><i class="fa fa-google-plus"></i></a>
-				    <a href=""><i class="fa fa-linkedin"></i></a>
-				</div>
+				<ul class="social-personal">
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
 
-	<div class="az-section-head text-center">
-		<h3><span class="az-title-head">TESTIMONIALS</span></h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, <span class="highlight">placeat. Et obcaecati,</span>quis rerum cum est earum aliquam molestiae? Placeat non eaque officia perspiciatis. Iusto esse officiis delectus, <span class="highlight">repellendus?</span> Aperiam..</p>
+	<div class="az-section-head text-center animatedParent" data-sequence="500">
+		<h3 class="animated bounceInDown" data-id='1'><span class="az-title-head">TESTIMONIALS</span></h3>
+		<p class="animated bounceInDown" data-id='2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, <span class="highlight">placeat. Et obcaecati,</span>quis rerum cum est earum aliquam molestiae? Placeat non eaque officia perspiciatis. Iusto esse officiis delectus, <span class="highlight">repellendus?</span> Aperiam..</p>
 	</div>
 
+	<div class="container">
+		<div class="az-section-head text-center">
+			<h3><span class="az-title-head">CONTACT US</span></h3>
+		</div>
+		<form>
+			<div class="row">
+				<div class="col-md-6">
+					<section class="content bgcolor-3">
+						<span class="input input--manami">
+							<input class="input__field input__field--manami" type="text" id="name" name="name">
+							<label class="input__label input__label--manami" for="name">
+								<span class="input__label-content input__label-content--manami">Your name</span>
+							</label>
+						</span>
+						<span class="input input--manami">
+							<input class="input__field input__field--manami" type="text" id="email" name="email">
+							<label class="input__label input__label--manami" for="email">
+								<span class="input__label-content input__label-content--manami">Your email</span>
+							</label>
+						</span>
+						<span class="input input--manami">
+							<label for="mensages" class="input__label-content input__label-content--manami">Your Mensages</label>
+							<textarea name="Mensages" id="Mensages" cols="30" rows="10" class="textarea__field textarea__field--manami" placeholder="Write something"></textarea>
+
+						</span>
+					</section>
+					<div class="row text-center">
+						<button type="submit" class="btn btn-default">Submit</button>
+					</div>
+				</div>
+				<div class="col-md-6">						
+					<div class="az-contact-info">
+						<h3>Venezuela</h3>
+						<ul>
+							<li class="address">Puerto Cabello, Carabobo <br> Edificio la Sultana</li>
+							<li class="phone"><a href="tel://0000000">+ 0000000</a></li>
+							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+							<li class="url"><a href="#">MiSitio.com</a></li>
+						</ul>
+					</div>
+
+					<div class="az-contact-info">
+
+	<style>
+		#map {
+	    	height: 400px;
+	    }
+	</style>
+    <div id="map"></div>
+
+					</div>
+				</div>
+			</div>
+		</form>
+		<hr class="featurette-divider">
+	</div>
 	<!-- END-HEADER -->
 	<footer>
 		<div class="container">
@@ -259,50 +353,7 @@
 			&copy; 2017 <span class="highlight">Anselmi</span> Theme - All Right Reserved. Designed byr<a href="#" target="_blank"> Carlos Anselmi</a>
 		</div>
 	</footer>
-	<style>
-		footer{
-			background: #d3ff0d;
-			padding: 40px 0px 0px 0px;
-			position: relative;
-		}
-		.footer-social {
-    		-webkit-padding-start: 0px;
-		}
-		.footer-social li{
-		    float: left;
-		    display: inline-block;
-		    width: calc(100% / 5);
-		    text-align: center;
-		    padding: 4px;
-		}
-		.footer-social li a{
-		    display: block;
-		    padding: 10px;
-		    background: #282528;
-		    color: white;
-		    overflow: hidden;
-		}
-		.footer-links ul .cl-effect-4 a::after{
-			    background: #282528;
-			        bottom: 7px;
-			height: 2px;
-		}
 
-		.footer-social li a:hover i{
-		    transform: rotate(7deg) scale(2.5);
-		    transition-duration: 0.2s;
-		}
-		.footer-bottom{
-		    width: 100%;
-		    background: #282528;
-
-		    color: white;
-		    padding: 10px 0px;
-		}
-		.footer-bottom a{
-			color: #d3ff0d;
-		}
-	</style>
 	<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 </body>
@@ -317,10 +368,26 @@
 	<script src="vendor/responsiveslides/responsiveslides.min.js" type="text/javascript"></script>
 	 <!--  responsiveslides -->
 	<script src="vendor/parallax/parallax.js" type="text/javascript"></script>
+	 <!--  css3-animate-it -->
+	<script src="vendor/css3-animate-it/js/css3-animate-it.js"></script>
+	 <!--  honeycombs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script> 
+	<script src="vendor/honeycombs/js/honeycombs.js"></script>	
+
+	<script src="vendor/awesome-input-focus-effects/js/awesome-input-focus-effects.js"></script>	
 	 <!--  main -->
 	<script src="js/main.js"></script>
 	<script>
-		$('.parallax-window').parallax({imageSrc: 'images/city.jpg'});
-	</script>
+		$(function(){
+			indexSlider();
+			scrollNavbar();
+			loaderPage();
+			awesome_input_focus_effects();
+			$('.parallax-window').parallax({imageSrc: 'images/city.jpg'});
+		});
+
+	    
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9W3uAmbhhbj7MYJZXHvLxkSSOiYS0iSM&callback=initMap" async defer></script>
 </html>
 
