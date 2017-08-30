@@ -1,0 +1,17 @@
+@import "component/variables";
+@import "component/mix";
+@import "component/initial";
+
+.navbar {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    margin-top: 0px;
+    background: $color-primary;
+}
+
+.cl-effect-4 a::after{
+	background: $color-gray;
+}
